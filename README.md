@@ -111,7 +111,14 @@ module "hello_post" {
 ```
 
 
-## License
+## test
 
-This project and its Terraform modules are released under the MIT License. See
-the bundled [LICENSE](LICENSE.md) file for details.
+```
+curl -X POST https://wcshw2l1s2.execute-api.us-east-1.amazonaws.com/production/hello
+
+{"message": "I should have created something..."}
+
+curl -X GET https://wcshw2l1s2.execute-api.us-east-1.amazonaws.com/production/hello
+{"message": "Hello, World!"}
+
+```
